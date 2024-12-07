@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-flow__handle {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #4f46e5 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.react-flow__handle:hover {
+  background-color: #6366f1 !important;
+  transform: scale(1.2) !important;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2;
+  stroke: #4f46e5;
+}
+
+.react-flow__node {
+  cursor: grab;
+  transition: transform 0.2s ease-in-out;
+}
+
+.react-flow__node:hover {
+  transform: translateY(-2px);
+}
+
+.react-flow__node:active {
+  cursor: grabbing;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.react-flow__controls-button {
+  border: none !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  padding: 8px !important;
+  background: white !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #f3f4f6 !important;
+}
+
+.react-flow__minimap {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+}
+
+.react-flow__panel {
+  border-radius: 8px !important;
+}
